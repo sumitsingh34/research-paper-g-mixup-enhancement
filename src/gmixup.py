@@ -124,7 +124,7 @@ if __name__ == '__main__':
     parser.add_argument('--data_path', type=str, default="./")
     parser.add_argument('--dataset', type=str, default="REDDIT-BINARY")
     parser.add_argument('--model', type=str, default="GIN")
-    parser.add_argument('--epoch', type=int, default=800)
+    parser.add_argument('--epoch', type=int, default=200)
     parser.add_argument('--batch_size', type=int, default=32)
     parser.add_argument('--lr', type=float, default=0.01)
     parser.add_argument('--num_hidden', type=int, default=64)
@@ -281,3 +281,6 @@ if __name__ == '__main__':
 
         logger.info('Epoch: {:03d}, Train Loss: {:.6f}, Val Loss: {:.6f}, Test Loss: {:.6f},  Val Acc: {: .6f}, Test Acc: {: .6f}'.format(
             epoch, train_loss, val_loss, test_loss, val_acc, test_acc))
+        
+    logger.info('Final Values are: Train Loss: {:.6f}, Val Loss: {:.6f}, Test Loss: {:.6f},  Val Acc: {: .6f}, Test Acc: {: .6f}'.format(
+        train_loss, val_loss, test_loss, val_acc, test_acc))

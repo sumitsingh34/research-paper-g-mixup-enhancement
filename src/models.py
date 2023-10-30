@@ -1,3 +1,5 @@
+#!/C:/Users/sumit/anaconda3/python.exe
+
 from torch_geometric.nn import GINConv, global_mean_pool, JumpingKnowledge
 from torch.nn import Linear, Sequential, ReLU, BatchNorm1d as BN
 from math import ceil

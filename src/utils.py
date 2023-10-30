@@ -1,3 +1,6 @@
+#!/C:/Users/sumit/anaconda3/python.exe
+
+
 from typing import List, Tuple
 from skimage.restoration import denoise_tv_chambolle
 import numpy as np
